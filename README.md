@@ -37,8 +37,8 @@ python secure_password_generator.py
 | `--no-symbols` | Exclude special characters | off |
 | `--no-uppercase` | Exclude uppercase letters | off |
 | `-e`, `--exclude` | Exclude specific characters (repeatable) | none |
-| `-h`, `--help` | Show help message | — |
-| `--version` | Show program version | — |
+| `-h`, `--help` | Show help message |  |
+| `--version` | Show program version | v1.0 |
 
 ### Examples
 
@@ -69,7 +69,7 @@ python secure_password_generator.py -l 24 -n 3 --no-uppercase -e "'" -e '"'
 
 ## Security notes
 
-- Passwords are generated using Python's [`secrets`](https://docs.python.org/3/library/secrets.html) module, which is designed for cryptographic use — unlike the `random` module, it is not predictable from previous outputs.
+- Passwords are generated using Python's [`secrets`](https://docs.python.org/3/library/secrets.html) module, which is designed for cryptographic use  unlike the `random` module, it is not predictable from previous outputs.
 - By default, the character pool includes all of `string.punctuation`, which contains characters such as `\`, `"`, and `'` that can occasionally cause issues in certain shells, config files, or login forms. Use `-e` to exclude any characters that don't work for your use case.
 - Generated passwords are printed to standard output. If you're using this in a script or workflow, be mindful of where that output ends up (terminal history, logs, etc.).
 
