@@ -14,7 +14,7 @@ def print_banner():
     print(f'{BLUE}{banner}{RESET}')
 
 
-# Show the banner only when help is being requested, before argparse prints its own help text
+#Banner only when help is being requested, before argparse prints its own help text
 if '-h' in sys.argv or '--help' in sys.argv:
     print_banner()
 
