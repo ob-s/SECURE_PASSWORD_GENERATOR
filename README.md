@@ -19,12 +19,6 @@ git clone https://github.com/<your-username>/secure_password_generator.git
 cd secure_password_generator
 ```
 
-Install the required dependency:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
 
 Generate a default password (16 characters, all character types):
